@@ -150,5 +150,6 @@ for contour in contours:
 # Show the corrected image on the original and canvas
 # cv2_imshow(image)
 cv2.imshow('detectedcanvas',canvas)
+cv2.imwrite('isolated_corrected_shapes.png',canvas)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
